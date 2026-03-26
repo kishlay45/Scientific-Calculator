@@ -12,7 +12,7 @@ function calculate(){
 try{
 let result = eval(actualExp);
 
-// 🔥 FIX FLOATING ERRORS (cos90, sin180, etc.)
+//  FIX FLOATING ERRORS (cos90, sin180, etc.)
 if (Math.abs(result) < 1e-10) {
     result = 0;
 }
@@ -86,7 +86,7 @@ else if(this.classList.contains("btn-func")){
 
 switch(val){
 
-// 🔥 DEGREE TRIG
+//  DEGREE TRIG
 case "sin":
 displayExp += "sin(";
 actualExp += "Math.sin((Math.PI/180)*";
